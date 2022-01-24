@@ -29,12 +29,13 @@
 
                   <div class="col">
                     <p class="title-col">Km da percorrere</p>
-                      <input class="input-name" type="number"></input>
+                      <input class="input-km" type="number"></input>
                   </div>
 
                   <div class="col">
                     <p class="title-col">Fascia d'età</p>
-                    <select>
+
+                    <select id="age-select">
 
                         <option value="">Seleziona età</option>
                         <option value="minorenne">Minorenne</option>
@@ -47,8 +48,8 @@
 
                   <!-- BUTTON GENERA - ANNULLA -->
                   <div id="btn-form">
-                      <button>Genera</button>
-                      <button>Annulla</button>
+                      <button id="btn-genera">Genera</button>
+                      <button id="btn-annulla">Annulla</button>
                   </div>
 
               </div>
@@ -56,44 +57,46 @@
           </div>
 
           <!-- SEZIONE IL TUO BIGLIETTO -->
-          <h2>Il tuo biglietto</h2>
-          <div id="ticket-section">
+          <div id="display-div" class="display-none">
+              <h2>Il tuo biglietto</h2>
+              <div id="ticket-section">
 
-              <h3>Dettaglio passeggeri</h3>
-              <div class="row">
+                  <h3>Dettaglio passeggeri</h3>
+                  <div class="row">
 
-                  <div class="name-pass float-l">
-                    <p>Nome Passeggero</p>
-                    <span>nome</span>
-                  </div>
-
-                  <div class="data-ticket float-l">
-
-                      <div class="col-ticket">
-                          <p>Offerta</p>
-                          <span id="tipo-ticket">Testo</span>
+                      <div class="name-pass float-l">
+                        <p>Nome Passeggero</p>
+                        <span id="name-passenger"></span>
                       </div>
 
-                      <div class="col-ticket">
-                          <p>Carrozza</p>
-                          <span id="num-carrozza">Testo</span>
-                      </div>
+                      <div class="data-ticket float-l">
 
-                      <div class="col-ticket">
-                          <p>Codice CP</p>
-                          <span id="codice-cp">Testo</span>
-                      </div>
+                          <div class="col-ticket">
+                              <p>Offerta</p>
+                              <span id="tipo-ticket"></span>
+                          </div>
 
-                      <div class="col-ticket">
-                          <p>Costo biglietto</p>
-                          <span id="costo-ticket">Testo</span>
+                          <div class="col-ticket">
+                              <p>Carrozza</p>
+                              <span id="num-carrozza"></span>
+                          </div>
+
+                          <div class="col-ticket">
+                              <p>Codice CP</p>
+                              <span id="codice-cp"></span>
+                          </div>
+
+                          <div class="col-ticket">
+                              <p>Costo biglietto</p>
+                              <span id="costo-ticket"></span>
+                          </div>
+
                       </div>
 
                   </div>
 
               </div>
-
-          </div>
+          </div>    
           
       </div>
 
